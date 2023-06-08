@@ -13,13 +13,13 @@ eureka:
         locator:
           enabled: true
       routes:
-        - id: school
-          uri: lb://SCHOOL-SERVICE
-          predicates:
-          - Path=/school/** 
-        - id: student
-          uri: lb://STUDENT-SERVICE
-          predicates:
-          - Path=/student/** 
+          - id: school
+            uri: lb://SCHOOL-SERVICE
+            predicates:
+            - Path=/school/** 
+          - id: student
+            uri: lb://STUDENT-SERVICE
+            predicates:
+            - Path=/student/** 
 
   
