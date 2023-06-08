@@ -16,10 +16,10 @@ eureka:
         - id: school
           uri: lb://SCHOOL-SERVICE
           predicates:
-            - Path=/school/** 
+          - Path=/school/** 
         - id: student
           uri: lb://STUDENT-SERVICE
           predicates:
-            - Path=/student/** 
+          - Path=/student/** 
 
   
